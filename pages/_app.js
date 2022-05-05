@@ -7,7 +7,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <MoralisProvider
       serverUrl={process.env.NEXT_PUBLIC_MORALIS_SERVER} 
-      appId={process.env.NEXT_PUBLIC_MORALIS_APP_ID}>
+      appId={process.env.NEXT_PUBLIC_MORALIS_APP_ID}
+      clientid={process.env.NEXT_PUBLIC_CLIENT_ID}>
       <ModalProvider>
         <Component {...pageProps} />
       </ModalProvider>
